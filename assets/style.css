@@ -97,6 +97,19 @@ body {
 
 .bottom-container {
   display: flex;
+  justify-content: space-around;
+}
+
+.projects-container {
+  display: block;
+  height: 600px;
+  width: 600px;
+}
+
+.skills-container {
+  display: block;
+  height: 600px;
+  width: 600px;
 }
 
 .footer {
@@ -154,16 +167,30 @@ body {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .arrow:hover {
   color: #d34144;
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  outline: none !important;
   cursor: pointer;
+  box-shadow: none !important;
 }
 
 .arrow:focus {
   outline: none !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .noSelect {
@@ -209,6 +236,19 @@ ul > li {
   color: #d34144;
 }
 
+.projects-container > h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  color: #7055C6;
+  text-align: left;
+}
+
+.skills-container > h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  color: #7055C6;
+  text-align: right;
+}
 
 /*Components*/
 
@@ -319,16 +359,20 @@ ul > li {
     margin-left: 40px;
   }
   .header {
-  display: block;
+    display: block;
+  }
+  .bottom-container {
+    display: block;
+    justify-content: none;
   }
 
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .banner-text {
-    font-size: 45px;
-    margin-top: 710px;
-    margin-left: 35px;
+    font-size: 40px;
+    margin-top: 520px;
+    margin-left: 20px;
   }
 }
 
