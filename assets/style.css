@@ -103,6 +103,29 @@ body {
 
 .projects-container {
   display: block;
+  background-color: #f9f9f9;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
+
+.projects-header {
+  background-color: #7055C6;
+  padding: 15px;
+  border-radius: 6px 6px 0 0;
+}
+
+.project {
+  display: block;
+  margin: 25px;
+}
+
+.project-text {
+  display: flex;
+}
+
+.details {
+  max-height: 0;
+  overflow: hidden;
 }
 
 .skills-container {
@@ -260,12 +283,61 @@ ul > li {
   text-align: left;
 }
 
+
+.projects-header > h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  color: white;
+  text-align: left;
+  margin: 0;
+}
+
+.project > h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #7055C6;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.project-text > p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #1e1e1e;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.project-text > a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px;
+  color: #7055C6;
+  text-align: center;
+  font-weight: bolder;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+#randomeal-toggle:hover {
+  color: #d34144;
+  cursor: pointer;
+}
+
+#rioserve-toggle:hover {
+  color: #d34144;
+  cursor: pointer;
+}
+
+#cocktail-toggle:hover {
+  color: #d34144;
+  cursor: pointer;
+}
+
 .skills-header > h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 35px;
   color: white;
   text-align: right;
-  /*margin-top: 0;*/
   margin: 0;
 }
 
@@ -397,6 +469,9 @@ ul > li {
     margin-left: 0;
     display: block;
   }
+  .bottom-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 720px) {
@@ -409,10 +484,6 @@ ul > li {
   .header {
     display: block;
   }
-  .bottom-container {
-    display: block;
-    justify-content: none;
-  }
 
 }
 @media (max-width: 540px) {
@@ -421,6 +492,9 @@ ul > li {
     font-size: 40px;
     margin-top: 520px;
     margin-left: 20px;
+  }
+  .skills {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
