@@ -98,7 +98,7 @@ body {
 .bottom-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
+  grid-gap: 25px;
 }
 
 .projects-container {
@@ -123,9 +123,34 @@ body {
   display: flex;
 }
 
-.details {
+.randomeal-details {
   max-height: 0;
   overflow: hidden;
+  transition: max-height .5s ease-in-out;
+}
+
+.randomeal-details.visible {
+  max-height: 400px;
+}
+
+.rioserve-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
+}
+
+.rioserve-details.visible {
+  max-height: 200px;
+}
+
+.cocktail-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
+}
+
+.cocktail-details.visible {
+  max-height: 200px;
 }
 
 .skills-container {
@@ -299,6 +324,13 @@ ul > li {
   text-align: left;
   margin-bottom: 0;
 }
+.project > h3 > a {
+  color: #7055C6;
+  text-decoration: none;
+}
+.project > h3 > a:hover {
+  color: #d34144;
+}
 
 .project-text > p {
   font-family: 'Raleway', sans-serif;
@@ -316,6 +348,66 @@ ul > li {
   font-weight: bolder;
   margin-left: 5px;
   text-decoration: none;
+  transition: transform .5s ease-in-out;
+}
+
+.project-text > a.active {
+  transition: all .3s ease-in-out;
+  transform: rotate(-45deg);
+}
+
+.randomeal-details > p {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #2b2b2b;
+}
+.randomeal-details > p > a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #7055C6;
+  text-decoration: none;
+}
+.randomeal-details > p > a:hover {
+  color: #d34144;
+  font-weight: bolder;
+}
+
+.rioserve-details > p {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #2b2b2b;
+}
+.rioserve-details > p > a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #7055C6;
+  text-decoration: none;
+}
+.rioserve-details > p > a:hover {
+  color: #d34144;
+  font-weight: bolder;
+}
+
+.cocktail-details > p {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #2b2b2b;
+}
+.cocktail-details > p > a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #7055C6;
+  text-decoration: none;
+}
+.cocktail-details > p > a:hover {
+  color: #d34144;
+  font-weight: bolder;
 }
 
 #randomeal-toggle:hover {

@@ -6,6 +6,32 @@ const typed = new Typed('#typed', {
 });
 
 // Details Toggle
-const onClick = () => {
-  event.currentTarget.classList.toggle("active");
+const showDetailsRandomeal = () => {
+  const details = document.querySelector(".randomeal-details")
+  details.classList.toggle("visible");
+  const btn = document.querySelector("#randomeal-toggle");
+  btn.classList.toggle("active");
 }
+
+const randoBtn = document.querySelector("#randomeal-toggle")
+randoBtn.addEventListener('click', showDetailsRandomeal);
+
+const showDetailsRioserve = () => {
+  const details = document.querySelector(".rioserve-details")
+  details.classList.toggle("visible");
+  const btn = document.querySelector("#rioserve-toggle");
+  btn.classList.toggle("active");
+}
+
+const rioBtn = document.querySelector("#rioserve-toggle")
+rioBtn.addEventListener('click', showDetailsRioserve);
+
+const showDetailsCocktail = () => {
+  const details = document.querySelector(".cocktail-details")
+  details.classList.toggle("visible");
+  const btn = document.querySelector("#cocktail-toggle");
+  btn.classList.toggle("active");
+}
+
+const ctBtn = document.querySelector("#cocktail-toggle")
+ctBtn.addEventListener('click', showDetailsCocktail);
