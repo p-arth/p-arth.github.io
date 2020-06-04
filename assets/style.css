@@ -204,14 +204,14 @@ p {
 /* Links
 ********************************************************************* */
 a {
-	color: #1EAEDB;
+	color: #7053c6;
 }
 a:hover {
-	color: #0FA0CE;
+	color: #d34144 !important;
 }
-/* Header Section
-********************************************************************* */
 
+
+/* Header */
 
 header {
 	display: -webkit-box;
@@ -222,15 +222,35 @@ header {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-    width: 100%%;
+    width: 100%;
 	height: 100vh;
-	background: #e55d87;
-	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+	overflow: hidden;
+	position: relative;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
+
+header::before {
+	content: '';
+	position: absolute;
+	width: 120%;
+	height: 110%;
+	background-image: linear-gradient(125deg, rgba(112, 83, 198, 0.6) 0%, rgba(211, 65, 68, 0.6) 100%), url('./images/hackerman1.jpg');
+    background-clip: content-box;
+    background-size: cover;
+	background-position: bottom;
+    filter: blur(5px);
+	top: -15px;
+    left: -15px;
+	z-index: -1;
+    transition: all 1s ease-in-out;
+}
+
+header:hover::before {
+	transition: all 1s ease-in-out;
+	background-position: top;
+	/* filter: blur(1px); */
+}
+
 .title {
 	-webkit-align-self: center;
 	-ms-flex-item-align: center;
@@ -249,10 +269,11 @@ header {
 }
 .title h1 {
 	font-size: 80px;
-	font-weight: 300;
-	text-transform: uppercase;
+	font-weight: 700;
+	/* text-transform: uppercase; */
+	font-style: italic;
 	line-height: 0.85;
-	margin-bottom: 28px;
+	margin-bottom: 10px;
 	margin: 0;
 	padding: 0;
 	color: #FFFFFF;
@@ -283,8 +304,8 @@ header {
 }
 }
 .title .icon {
-	color: #FFFFFF;
-	font-size: 50px;
+	/* color: #FFFFFF; */
+	width: 50px;
 }
 .main_nav {
 	position: fixed;

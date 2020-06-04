@@ -1,9 +1,9 @@
-// // Typed.js
-// const typed = new Typed('#typed', {
-//   stringsElement: '#typed-strings'
-//   ,
-//   typeSpeed: 100
-// });
+// Typed.js
+const typed = new Typed('#typed', {
+  stringsElement: '#typed-strings'
+  ,
+  typeSpeed: 100
+});
 
 // // Details Toggle
 // const showDetailsRandomeal = () => {
