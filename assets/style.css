@@ -678,8 +678,9 @@ nav ul a:hover {
 	margin-right: 50px;
 	border-radius: 5px;
 	width: 135px;
-    height: auto;
+    height: 135px;
 	transition: .5s;
+	object-fit: cover;
 }
 .image:hover {
 	opacity: 0.6;
