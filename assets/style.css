@@ -546,19 +546,57 @@ nav ul a:hover {
 	}
 }
 
-/* Team */
-#team {
-	padding: 50px 0 100px 0;
-}
-#team .icon {
-	font-size: 26px;
-}
-
 /* Skills */
 #skills {
 	padding: 100px 0 100px 0;
 	background-color: #F5F5F5;
 }
+
+.tags {
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 15px;
+}
+
+.tag {
+	margin: 1px 1px;
+    padding: 5px 8px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.front {
+	color: rgb(112, 85, 198);
+    background-color: rgba(112, 85, 198, 0.1);
+    border: solid 1px rgb(112, 85, 198);
+}
+
+.back {
+	color: rgb(211, 65, 68);
+    background-color: rgba(211, 65, 68, 0.1);
+    border: solid 1px rgb(211, 65, 68);
+}
+
+.fulldev {
+	color: rgb(64, 129, 209);
+    background-color: rgba(64, 129, 209, 0.1);
+    border: solid 1px rgb(64, 129, 209);
+}
+
+.others {
+	color: rgb(31, 124, 49);
+	background-color: rgba(31, 124, 49, 0.1);
+	border: solid 1px rgb(31, 124, 49);
+}
+
+.tippy-box[data-theme~='p-gradient'] {
+	background: linear-gradient(135deg, #7055C6 0%, #d34144 100%);
+	color: white;
+	/* font-weight: bolder; */
+	text-align: center;
+}
+
+
 .progressBar {
 	margin-bottom: 26px;
 	margin-bottom: 1.66em;
@@ -621,21 +659,35 @@ nav ul a:hover {
 #portfolio {
 	padding: 100px 0 100px 0;
 }
+
+.work {
+	display: flex;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.work-info h4 {
+	line-height: 1;
+}
+
+.work-info p {
+	line-height: 1;
+}
+
 .image {
-	background-color: #5a5a5a;
-	width: 100%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
+	margin-right: 50px;
+	border-radius: 5px;
+	width: 135px;
+    height: auto;
 	transition: .5s;
 }
 .image:hover {
 	opacity: 0.6;
 	transition: .3s;
-	background-image: url(../images/hoverbg.png);
-	background-repeat: no-repeat;
-	background-position: center;
+	cursor: pointer;
 }
+
+
 
 /* Testimonial */
 #testimonial {

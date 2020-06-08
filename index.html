@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
   </head>
 
   <body>
@@ -25,7 +26,7 @@
           <ul>
             <li><a class="smoothscroll" href="#header">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#skills">Services</a></li>
+            <li><a class="smoothscroll" href="#skills">Skills</a></li>
             <li><a class="smoothscroll" href="#portfolio">Work</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
           </ul>
@@ -92,52 +93,64 @@
 
     <section id="skills">
       <div class="container">
-        <h1>Services</h1>
+        <h1>Skills</h1>
         <div class="block"></div>
-        <div class="row">
-          <div class="one-third column">
-            <h3>Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
-          </div>
-          <div class="one-third column">
-            <h3>Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
-          </div>
-          <div class="one-third column">
-            <h3>Marketing</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+
+        <div class="progressBar">
+          <h1>Experienced with</h1>
+          <div class="progressBarContainer tippy-box" data-tippy-content="There is always room for improvement! I'm constantly learning more!">
+            <div class="progressBarValue value-90"></div>
           </div>
         </div>
-        <div class="row">
-          <div class="eight columns">
-            <div class="progressBar">
-              <h4>HTML5</h4>
-              <div class="progressBarContainer">
-                <div class="progressBarValue value-90"></div>
-              </div>
-            </div>
-            <div class="progressBar">
-              <h4>CSS3</h4>
-              <div class="progressBarContainer">
-                <div class="progressBarValue value-80"></div>
-              </div>
-            </div>
-            <div class="progressBar">
-              <h4>Jquery</h4>
-              <div class="progressBarContainer">
-                <div class="progressBarValue value-30"></div>
-              </div>
-            </div>
-            <div class="progressBar">
-              <h4>WordPress</h4>
-              <div class="progressBarContainer">
-                <div class="progressBarValue value-70"></div>
-              </div>
-            </div>
+        <div class="tags">
+          <div class="tag front">HTML5</div>
+          <div class="tag front">CSS3</div>
+          <div class="tag front">JavaScript</div>
+          <div class="tag front">SASS</div>
+          <div class="tag front">jQuery</div>
+          <div class="tag front">Bootstrap</div>
+
+          <div class="tag back">Ruby</div>
+          <div class="tag back">SQL</div>
+          <div class="tag back">MySQL</div>
+          <div class="tag back">PostgreSQL</div>
+          <div class="tag back">Git</div>
+          <div class="tag back">Active Record</div>
+          <div class="tag back">API Integration</div>
+
+          <div class="tag fulldev">Rails</div>
+          <div class="tag fulldev">Heroku</div>
+          <div class="tag fulldev">MVC</div>
+          <div class="tag fulldev">PWA</div>
+
+          <div class="tag others">SEO</div>
+          <div class="tag others">Design</div>
+          <div class="tag others">Marketing</div>
+          <div class="tag others">Wordpress</div>
+          <div class="tag others">Linux</div>
+          <div class="tag others">Mac</div>
+          <div class="tag others">Windows</div>
+
+        </div>
+
+        <div class="progressBar">
+          <h1>A few steps in</h1>
+          <div class="progressBarContainer" data-tippy-content="I'm on a beginner's level. I'd love to work with these, specially React!">
+            <div class="progressBarValue value-30"></div>
           </div>
-          <div class="four columns">
-            <p>Lorem ipsum dolor sit amet, enim soluta consectetur adipisicing elit. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis in quia eum autem. Enim soluta consectetur adipisicing elit.</p>
-          </div>
+        </div>
+        <div class="tags">
+          <div class="tag front">ReactJS</div>
+          <div class="tag front">Redux</div>
+          <div class="tag front">React Native</div>
+          <div class="tag front">Blade</div>
+
+          <div class="tag back">NodeJS</div>
+          <div class="tag back">PHP</div>
+          <div class="tag back">API Development</div>
+
+          <div class="tag fulldev">Laravel</div>
+
         </div>
       </div>
     </section>
@@ -148,18 +161,62 @@
       <div class="container">
         <h1>Work</h1>
         <div class="block"></div>
-        <div class="row">
-          <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work One"/></div>
-          <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Two"/></div>
-          <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Three"/></div>
-          <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Four"/></div>
+        
+        <div class="work">
+          <img src="http://placehold.it/220x220" class="image" alt="Work One"/>
+          <div class="work-info">
+            <h4>Randomeal</h4>
+            <p>An app for indecisive eaters.</p>
+            <div class="tags">
+              <div class="tag fulldev">PWA</div>
+              <div class="tag front">JavaScript</div>
+              <div class="tag front">SASS</div>
+              <div class="tag fulldev">Rails</div>
+              <div class="tag back">Active Record</div>
+              <div class="tag back">API Integration</div>
+              <div class="tag fulldev">Heroku</div>
+              <div class="tag fulldev">MVC</div>
+              <div class="tag others">+ more</div>
+            </div>
+          </div>
         </div>
-        <div class="row" style="margin-top: 30px;">
-          <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Five"/></div>
-          <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Six"/></div>
-          <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Seven"/></div>
-          <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Eight"/></div>
+
+        <div class="work">
+          <img src="http://placehold.it/220x220" class="image" alt="Work One"/>
+          <div class="work-info">
+            <h4>Rioserve</h4>
+            <p>A platform to make and manage restaurant reservations.</p>
+            <div class="tags">
+              <div class="tag fulldev">Rails</div>
+              <div class="tag front">JavaScript</div>
+              <div class="tag front">SASS</div>
+              <div class="tag back">Active Record</div>
+              <div class="tag back">API Integration</div>
+              <div class="tag fulldev">Heroku</div>
+              <div class="tag fulldev">MVC</div>
+              <div class="tag others">+ more</div>
+            </div>
+          </div>
         </div>
+
+        <div class="work">
+          <img src="http://placehold.it/220x220" class="image" alt="Work One"/>
+          <div class="work-info">
+            <h4>Cocktail Palooza</h4>
+            <p>A platform to create and save cocktail's recipes.</p>
+            <div class="tags">
+              <div class="tag fulldev">Rails</div>
+              <div class="tag front">JavaScript</div>
+              <div class="tag front">SASS</div>
+              <div class="tag back">Active Record</div>
+              <div class="tag back">API Integration</div>
+              <div class="tag fulldev">Heroku</div>
+              <div class="tag fulldev">MVC</div>
+              <div class="tag others">+ more</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -226,6 +283,12 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+      <!-- Development -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+      <!-- Production -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 
 
     <!-- Old code -->
