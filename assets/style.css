@@ -205,9 +205,11 @@ p {
 /* Links */
 a {
 	color: #7053c6;
+	text-decoration: none;
 }
 a:hover {
 	color: #d34144 !important;
+	cursor: pointer;
 }
 .neutral-link {
 	text-decoration: none;
@@ -675,6 +677,7 @@ nav ul a:hover {
 }
 
 .image {
+	margin-top: -12px;
 	margin-right: 50px;
 	border-radius: 5px;
 	width: 135px;
@@ -688,6 +691,25 @@ nav ul a:hover {
 	cursor: pointer;
 }
 
+.image.open {
+	width: 135px;
+	height: 238.9px;
+	transition: .5s;
+	margin-top: -22px;
+}
+
+.work-details {
+	max-height: 0px;
+	overflow: hidden;
+	transition: .6s;
+	margin-bottom: 0;
+}
+
+.work-details.active {
+	max-height: 200px;
+	transition: .6s;
+	margin-bottom: 25px;
+}
 
 
 /* Testimonial */
@@ -707,6 +729,19 @@ nav ul a:hover {
 	top: 0px;
 	display: none;
 	text-align: center;
+}
+
+.quote-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	transition: .3s;
+}
+
+.quote-img:hover {
+	transition: .3s;
+	opacity: .4;
+	cursor: pointer;
 }
 
 /* Contact */

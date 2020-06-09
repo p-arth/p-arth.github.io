@@ -1,3 +1,5 @@
+// import { builtinModules } from "module";
+
 // Typed.js
 const typed = new Typed('#typed', {
   stringsElement: '#typed-strings'
@@ -5,43 +7,38 @@ const typed = new Typed('#typed', {
   typeSpeed: 100
 });
 
-// // Details Toggle
-// const showDetailsRandomeal = () => {
-//   const details = document.querySelector(".randomeal-details")
-//   details.classList.toggle("visible");
-//   const btn = document.querySelector("#randomeal-toggle");
-//   btn.classList.toggle("active");
-// }
+// Details Toggle
 
-// const randoBtn = document.querySelector("#randomeal-toggle")
-// randoBtn.addEventListener('click', showDetailsRandomeal);
+const showDetailsRandomeal = () => {
+  const img = document.querySelector("#randomeal-img");
+  img.classList.toggle("open");
+  const details = document.querySelector("#randomeal-details");
+  details.classList.toggle("active");
+}
 
-// const showDetailsRioserve = () => {
-//   const details = document.querySelector(".rioserve-details")
-//   details.classList.toggle("visible");
-//   const btn = document.querySelector("#rioserve-toggle");
-//   btn.classList.toggle("active");
-// }
+const openRandoImage = document.querySelector("#randomeal-img")
+const openRandoImageX = document.querySelector("#rando-more")
+openRandoImage.addEventListener('click', showDetailsRandomeal);
+openRandoImageX.addEventListener('click', showDetailsRandomeal);
 
-// const rioBtn = document.querySelector("#rioserve-toggle")
-// rioBtn.addEventListener('click', showDetailsRioserve);
+const showDetailsRioserve = () => {
+  const img = document.querySelector("#rioserve-img");
+  img.classList.toggle("open");
+  const details = document.querySelector("#rioserve-details");
+  details.classList.toggle("active");
+}
 
-// const showDetailsCocktail = () => {
-//   const details = document.querySelector(".cocktail-details")
-//   details.classList.toggle("visible");
-//   const btn = document.querySelector("#cocktail-toggle");
-//   btn.classList.toggle("active");
-// }
-
-// const ctBtn = document.querySelector("#cocktail-toggle")
-// ctBtn.addEventListener('click', showDetailsCocktail);
+const openRioImage = document.querySelector("#rioserve-img")
+const openRioImageX = document.querySelector("#rio-more")
+openRioImage.addEventListener('click', showDetailsRioserve);
+openRioImageX.addEventListener('click', showDetailsRioserve);
 
 /*----------------------------------------------------*/
 /* Quote Loop
 ------------------------------------------------------ */
 
 function fade($ele) {
-  $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
+  $ele.fadeIn(1000).delay(6000).fadeOut(1000, function() {
       var $next = $(this).next('.quote');
       fade($next.length > 0 ? $next : $(this).parent().children().first());
  });
@@ -104,7 +101,7 @@ jQuery(document).ready(function($) {
 TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
 
 
-// Tootip
+// Tooltip
 
 tippy('[data-tippy-content]', {
   animation: 'scale',
