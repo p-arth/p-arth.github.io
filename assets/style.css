@@ -706,7 +706,7 @@ nav ul a:hover {
 }
 
 .work-details.active {
-	max-height: 200px;
+	max-height: 800px;
 	transition: .6s;
 	margin-bottom: 25px;
 }
@@ -722,6 +722,7 @@ nav ul a:hover {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
+	transition: .2s;
 }
 .quote {
 	margin: 10px 30px;
