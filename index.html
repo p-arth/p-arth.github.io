@@ -10,12 +10,285 @@
     <meta property="og:image" content="assets/portfolio-screen.png">
 
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <script src="https://kit.fontawesome.com/d85fd059e1.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
   </head>
 
   <body>
-    <div class="banner">
+    
+    <!-- Navbar -->
+
+    <div class="main_nav">
+      <div class="container">
+        <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+        <nav>
+          <ul>
+            <li><a class="smoothscroll" href="#header">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#skills">Skills</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Work</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header -->
+
+    <header id="header">
+      <div class="title">
+        <img src="./assets/images/ness1.gif" class="icon heading">
+        <div class="smallsep heading"></div>
+        <h1 class="main-heading">
+          <div id="typed-strings">
+            <p>Pedro A.</p>
+          </div>
+          <span id="typed"></span>
+        </h1>
+        
+        <h2 class="heading">Improving life through code</h2>
+        <a class="smoothscroll" href="#about">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        </a> </div>
+      <a class="smoothscroll" href="#about">
+      <div class="scroll-down"></div>
+      </a>
+    </header>
+      
+    <!-- About -->  
+      
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <h1>About</h1>
+          <div class="block"></div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <img src="./assets/images/pedro.jpg" alt="A pic of Pedro" id="avatar">
+            <div style="text-align: center;">
+              <a href="https://github.com/p-arth" target="_blank" class="typcn typcn-social-github-circular socialIconsAbout"></a>
+              <a href="https://www.linkedin.com/in/pedrotheart/" target="_blank" class="typcn typcn-social-linkedin-circular socialIconsAbout"></a>
+              <a href="https://www.instagram.com/thisjustsomeguy/" target="_blank" class="typcn typcn-social-instagram-circular socialIconsAbout"></a>
+              <a href="https://open.spotify.com/user/12161828353?si=_FmYyMSJQUyHc3v8wXMCtA" target="_blank" class="fab fa-spotify socialIconsXAbout"></a>
+            </div>
+          </div>
+          <div class="eight columns">
+            <h3><span class="typcn typcn-chevron-right-outline icon"></span>Who am I?</h3>
+            <p style="text-align: justify;">Yo! My name is Pedro Arthur. I started my career as a Graphic Designer during my time studying at UFRJ.
+              While eager to learn more, at the end of my studies, I decided to embark on a new journey,
+              taking a full turn to coding. I began studying by myself, and as I was falling in love with code, I made the decision to join the <a class="highlight" href="https://www.lewagon.com/pt-BR/rio" target="_blank">Le Wagon</a> coding bootcamp, from where I came out
+              fulfilled and confident to say that I'm a <a class="highlight" href="https://www.github.com/p-arth" target="_blank">Full-Stack Web Developer</a>.<br>
+              <a class="highlight" href="https://www.instagram.com/thisjustsomeguy" target="_blank">Amateur illustrator</a> for fun, and experienced with social & digital media work. I'm a geek, gamer, coffee lover, passionate about music, and a big <em>trending topics</em> follower.<br>
+              <br><b>Javascript</b> and <b>Ruby on Rails</b> adept, I already worked with Laravel and PHP, and I'm currently developing my <b>ReactJS</b> skills. Always ready to learn more and grow as a person, <em>improving life through code</em>.</p>          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->  
+
+    <section id="skills">
+      <div class="container">
+        <h1>Skills</h1>
+        <div class="block"></div>
+
+        <div class="progressBar">
+          <h1>Experienced with</h1>
+          <div class="progressBarContainer tippy-box" data-tippy-content="There is always room for improvement! I'm constantly learning more!">
+            <div class="progressBarValue value-90"></div>
+          </div>
+        </div>
+        <div class="tags">
+          <div class="tag front">HTML5</div>
+          <div class="tag front">CSS3</div>
+          <div class="tag front">JavaScript</div>
+          <div class="tag front">SASS</div>
+          <div class="tag front">jQuery</div>
+          <div class="tag front">Bootstrap</div>
+
+          <div class="tag back">Ruby</div>
+          <div class="tag back">SQL</div>
+          <div class="tag back">MySQL</div>
+          <div class="tag back">PostgreSQL</div>
+          <div class="tag back">Git</div>
+          <div class="tag back">Active Record</div>
+          <div class="tag back">API Integration</div>
+
+          <div class="tag fulldev">Rails</div>
+          <div class="tag fulldev">Heroku</div>
+          <div class="tag fulldev">MVC</div>
+          <div class="tag fulldev">PWA</div>
+
+          <div class="tag others">SEO</div>
+          <div class="tag others">Design</div>
+          <div class="tag others">Marketing</div>
+          <div class="tag others">Wordpress</div>
+          <div class="tag others">Linux</div>
+          <div class="tag others">Mac</div>
+          <div class="tag others">Windows</div>
+
+        </div>
+
+        <div class="progressBar">
+          <h1>A few steps in</h1>
+          <div class="progressBarContainer" data-tippy-content="I'm on a beginner's level. I'd love to work with these, specially React!">
+            <div class="progressBarValue value-30"></div>
+          </div>
+        </div>
+        <div class="tags">
+          <div class="tag front">ReactJS</div>
+          <div class="tag front">Redux</div>
+          <div class="tag front">React Native</div>
+          <div class="tag front">Blade</div>
+
+          <div class="tag back">NodeJS</div>
+          <div class="tag back">PHP</div>
+          <div class="tag back">API Development</div>
+
+          <div class="tag fulldev">Laravel</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->  
+
+    <section id="portfolio">
+      <div class="container">
+        <h1>Work</h1>
+        <div class="block"></div>
+        
+        <div class="work">
+          <img src="./assets/images/randomeal.gif" class="image" id="randomeal-img" alt="Randomeal"/>
+          <div class="work-info">
+            <h4><a href="https://randomealapp.herokuapp.com/" target="_blank">Randomeal</a></h4>
+            <p>An app for indecisive eaters. <b><a id ="rando-more" style="font-size: 25px;">+</a></b></p>
+            <div class="tags">
+              <div class="tag fulldev">PWA</div>
+              <div class="tag front">JavaScript</div>
+              <div class="tag front">SASS</div>
+              <div class="tag fulldev">Rails</div>
+              <div class="tag back">PostgreSQL</div>
+              <div class="tag back">API Integration</div>
+              <div class="tag fulldev">Heroku</div>
+              <div class="tag fulldev">MVC</div>
+              <div class="tag others">+ more</div>
+            </div>
+            <p class="work-details" id="randomeal-details" style="line-height: 1.2;">Randomeal is a progressive web app focused on mobile platforms that picks and displays a random restaurant from anywhere around the world based on filtering user inputs. It's a Rails project developed in 2 weeks through the use of Ruby, HTML, CSS, Javascript, APIs and more. It's a work in progress, a MVP that does not work in its full potential due to lack of financial investiment that our team can't handle right now. <b><a href="https://randomealapp.herokuapp.com/" target="_blank">You can check it here</a></b>.</p>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="./assets/images/rioserve.gif" class="image" id="rioserve-img" alt="Rioserve"/>
+          <div class="work-info">
+            <h4><a href="https://rioserve.herokuapp.com/" target="_blank">Rioserve</a></h4>
+            <p>A platform to make and manage restaurant reservations. <b><a id="rio-more" style="font-size: 25px;">+</a></b></p></p>
+            <div class="tags">
+              <div class="tag fulldev">Rails</div>
+              <div class="tag front">JavaScript</div>
+              <div class="tag front">SASS</div>
+              <div class="tag back">PostgreSQL</div>
+              <div class="tag back">API Integration</div>
+              <div class="tag fulldev">Heroku</div>
+              <div class="tag fulldev">MVC</div>
+              <div class="tag others">+ more</div>
+            </div>
+            <p class="work-details" id="rioserve-details" style="line-height: 1.2;">Rioserve is an airbnb-like platform for clients and owners, that lets the user make and manage restaurant's reservations. It's a Rails app developed in 1 week through the use of Ruby, HTML, CSS, Javascript, different APIs, and more. <b><a href="https://rioserve.herokuapp.com/" target="_blank">You can check it here</a></b>.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Testimonials -->  
+
+    <section id="testimonial">
+      <div class="container">
+        <div class="quoteLoop">
+          <blockquote class="quote"> <a href="https://www.linkedin.com/in/irina-popa-a6243bb2/" target="_blank"> <img src="https://media-exp1.licdn.com/dms/image/C4D03AQF2l8F6XW5n9Q/profile-displayphoto-shrink_800_800/0?e=1597276800&v=beta&t=zLKMA43cMQXO8GeBUde3LpznjlKxM4ZY65Pn3JPmYRs" class="quote-img" alt="Irina Popa"/></a>
+            <h5>&nbsp;<br>
+              &rdquo;It has been an outmost pleasure to work with Pedro, who impressed us from Day 1 of the bootcamp. He is a problem solver, a hard-worker and has intuive programming talent. If you give him a challenge he won't walk away until he solves it!&rdquo;<br>
+              <small>Irina Popa, Lead Teacher at Le Wagon & Developer</small></h5>
+          </blockquote>
+          <blockquote class="quote"> <a href="https://www.linkedin.com/in/andrerferrer/" target="_blank"> <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEgMwdtgjp4ew/profile-displayphoto-shrink_800_800/0?e=1597276800&v=beta&t=2mUyD_cGQlfLwq7oRjLP0OJPes--UPJBiefYz4rof9w" class="quote-img" alt="Andre Ferrer"/></a>
+            <h5>&nbsp;<br>
+              &ldquo;Extremely outgoing and a tech savvy, Pedro was the leader of the pack and the glue that kept everyone together. I can only wish him the best after the bootcamp, which is sure to follow.&rdquo;<br>
+              <small>Andre Ferrer, Lead Teacher at Le Wagon & Developer</small></h5>
+          </blockquote>
+          <blockquote class="quote"> <a href="https://www.linkedin.com/in/vitor-tavares-9257116a/" target="_blank"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQEo1MVWGmHaKQ/profile-displayphoto-shrink_800_800/0?e=1597276800&v=beta&t=rEXnU4ckqDXihDqEiKmVHAwRV6qgEOh40LMc4B5zjCs" class="quote-img" alt="Vitor Tavares"/></a>
+            <h5>&nbsp;<br>
+              &ldquo;Pedro é uma ótima pessoa para se ter no time. Ele é altamente competente, aprende rápido, tem uma visão crítica muito importante para qualquer projeto, e é muito bom com pessoas. Cada momento que trabalhamos juntos em qualquer projeto proporcionado pelo curso foi um momento de aprendizado.&rdquo;<br>
+              <small>Vitor Tavares, Eletronics Engineer & Developer</small></h5>
+          </blockquote>
+          <blockquote class="quote"> <a href="https://www.linkedin.com/in/brenoromeiro/" target="_blank"> <img src="https://media-exp1.licdn.com/dms/image/C5603AQGsf55Ni0H0tg/profile-displayphoto-shrink_800_800/0?e=1597276800&v=beta&t=icMGHFWhfNYPyZ36F-oyaP1BtX13AJn5BIxLougd31A" class="quote-img" alt="Breno Romeiro"/></a>
+            <h5>&nbsp;<br>
+              &ldquo;A great team player, Pedro was a nice addition to the projects in which we worked together. Specially when dealing with front-end, Pedro has the mindset needed to quickly adapt and learn new skills.&rdquo;<br>
+              <small>Breno Romeiro, Designer & Developer at Suavy</small></h5>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->  
+
+    <section id="contact">
+      <div class="container">
+        <h1>Contact</h1>
+        <div class="block"></div>
+        
+        <h5>So, how was your journey until here?</h5> <p style="font-size: 1.1em;">Maybe you came here right away, that's fine too!<br>
+          If you want to talk about freelance work, a job opportunity, or maybe discuss some ideas, feel welcomed to contact me. I'm always excited to get to know new people and opportunities!<br><br>
+          You should know, I love sharing music, so <a id="show-music">I may have some for you!</a>
+        </p>
+        <div class="music">
+          <div class="playlists">
+            <a href="https://open.spotify.com/playlist/02BNcuahZmZHhDfZRnLntQ?si=qpgSdxL6QOufwLXgacqsDQ" target="_blank"><div class="playlist">I'm feeling retrofuturistic</div></a>
+            <a href="https://open.spotify.com/playlist/1qSvHR4AKXbgTrO1Y1jMrh?si=sdbPzEdgQeGxhKtpyH9bMQ" target="_blank"><div class="playlist">I'm feeling apocalyptic</div></a>
+            <a href="https://open.spotify.com/playlist/4Kc44OuSqVybCchTb9qLFm?si=l9x2DlJ7SxujkqAFFtNdIw" target="_blank"><div class="playlist">Well, I just wanna chill</div></a>
+          </div>
+        </div>
+        <div class="btns">
+          <a href="mailto:pedro.art.vel@gmail.com"><div class="btn">Send Email</div></a>
+          <a href="./assets/documents/pedro-arthur-resume.pdf" target="_blank"><div class="btn">View Résumé</div></a>
+        </div>
+        <a href="https://github.com/p-arth" target="_blank" class="typcn typcn-social-github-circular socialIconsContact"></a>
+        <a href="https://www.linkedin.com/in/pedrotheart/" target="_blank" class="typcn typcn-social-linkedin-circular socialIconsContact"></a>
+      </div>
+    </section>
+
+    <!-- Footer -->  
+
+    <footer>
+      <div class="container">
+        <div class="nine columns">
+          <p>Developed by Pedro, with help of open source material, <a class="neutral-link" href="https://github.com/p-arth/p-arth.github.io" target="_blank">check it out</a>.</p>
+        </div>
+        
+        <div class="three columns"> <p>Follow me <img src="./assets/images/follow.gif" class="little-gif-follow"></p> <a href="https://github.com/p-arth" target="_blank" class="typcn typcn-social-github-circular socialIcons"></a> <a href="https://www.linkedin.com/in/pedrotheart/" target="_blank" class="typcn typcn-social-linkedin-circular socialIcons"></a> <a href="https://www.instagram.com/thisjustsomeguy/" target="_blank" class="typcn typcn-social-instagram-circular socialIcons"></a> <a href="https://open.spotify.com/user/12161828353?si=_FmYyMSJQUyHc3v8wXMCtA" target="_blank" class="fab fa-spotify socialIconsX"></a> </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+
+    <script src="https://kit.fontawesome.com/d85fd059e1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+      <!-- Development -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+      <!-- Production -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+
+    <!-- Old code -->
+
+    <!-- <div class="banner">
         <h1 class="banner-text">
           <div id="typed-strings">
             <p>Improving <strong>life</strong><br>through <em style="text-decoration: underline; color: #7053c6;">code</em>.</p>
@@ -194,7 +467,7 @@
 
 
 
-
+ -->
 
     <script src="assets/main.js"></script>
 
