@@ -764,6 +764,16 @@ nav ul a:hover {
 	justify-content: space-evenly;
 }
 
+@media (max-width: 550px) {
+	.playlists {
+		display: block;
+		margin: auto;
+	}
+	.playlist {
+		margin: 10px;
+	}
+}
+
 .playlist {
     padding: 8px 12px;
     border-radius: 15px;
