@@ -745,47 +745,88 @@ nav ul a:hover {
 }
 
 /* Contact */
+
 #contact {
 	padding: 100px 0 100px 0;
 }
-input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
-	height: 38px;
-	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-	background-color: #F5F5F5;
-	border: none;
-	box-shadow: none;
-	box-sizing: border-box;
-	border-radius: 0;
-	outline: none;
-}
-textarea {
-	min-height: 250px;
-}
-input[type="submit"] {
-	display: inline-block;
-	height: 38px;
-	padding: 0 30px;
-	color: #fff;
-	text-align: center;
-	font-size: 11px;
-	font-weight: 600;
-	line-height: 38px;
-	letter-spacing: .1rem;
-	text-transform: uppercase;
-	text-decoration: none;
-	white-space: nowrap;
-	background: #7053c6;
-	border-radius: 0px;
-	border: 0;
-	cursor: pointer;
-	box-sizing: border-box;
-}
-input[type="submit"]:hover {
-	background: #d34144;
-	text-decoration: none;
+
+.btns {
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 0;
 }
 
+.playlists {
+	display: flex;
+	margin: auto;
+	text-align: center;
+	justify-content: space-evenly;
+}
+
+.playlist {
+    padding: 8px 12px;
+    border-radius: 15px;
+	vertical-align: middle;
+	background-color: rgba(112, 83, 198, 0.5);
+	color: white;
+	font-style: italic;
+	transition: .3s;
+}
+
+.playlist:hover {
+	background-color: #d34144;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.btn {
+	text-transform: uppercase;
+	margin: 1px 1px;
+    padding: 5px 8px;
+    border-radius: 3px;
+	vertical-align: middle;
+	background-color: #7053c6;
+	color: white;
+	transition: .3s;
+}
+
+.btn:hover {
+	background-color: #d34144;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.socialIconsContact {
+	font-size: 42px;
+	color: #7055C6;
+	text-decoration: none !important;
+	line-height: 1.2;
+}
+.socialIconsContact:hover {
+	color: #d34144;
+	cursor: pointer;
+}
+
+.music {
+	max-height: 0;
+	overflow: hidden;
+	background-color: #efefef;
+	opacity: 0;
+	transition: .3s;
+}
+
+.music.show {
+	max-height: 200px;
+	border-radius: 5px;
+	padding: 20px 35px;
+	opacity: 1;
+	margin-bottom: 25px;
+	transition: .3s;
+}
+
+
 /* Footer */
+
 footer {
 	min-height: 120px;
 	padding: 25px 0 25px 0;

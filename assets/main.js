@@ -33,6 +33,14 @@ const openRioImageX = document.querySelector("#rio-more")
 openRioImage.addEventListener('click', showDetailsRioserve);
 openRioImageX.addEventListener('click', showDetailsRioserve);
 
+const showMusic = () => {
+  const music = document.querySelector(".music");
+  music.classList.toggle("show");
+}
+
+const openMusic = document.querySelector("#show-music");
+openMusic.addEventListener('click', showMusic);
+
 /*----------------------------------------------------*/
 /* Quote Loop
 ------------------------------------------------------ */
