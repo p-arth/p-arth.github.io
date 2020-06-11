@@ -676,9 +676,34 @@ nav ul a:hover {
 	line-height: 1;
 }
 
+@media (max-width: 550px) {
+	.work {
+		display: block;
+		margin: 60px auto;
+		align-items: center;
+	}
+	.work-info {
+		text-align: center;
+	}
+	.image {
+		display: flex;
+		margin: 0 auto 25px;
+		padding-right: 0 !important;
+		width: 200px !important;
+		height: 200px !important;
+	}
+	.image.open {
+		width: 200px !important;
+		height: 354px !important;
+	}
+	.work-details {
+		text-align: justify;
+	}
+}
+
 .image {
 	margin-top: -12px;
-	margin-right: 50px;
+	padding-right: 50px;
 	border-radius: 5px;
 	width: 135px;
     height: 135px;
@@ -716,7 +741,15 @@ nav ul a:hover {
 #testimonial {
 	background-color: #F5F5F5;
 	padding: 100px 0 100px 0;
+	min-height: 352px;
 }
+
+@media (max-width: 550px) {
+	#testimonial {
+		max-height: 352px;
+	}
+}
+
 .quoteLoop {
 	height: auto;
 	width: 100%;
