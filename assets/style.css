@@ -746,7 +746,7 @@ nav ul a:hover {
 
 @media (max-width: 550px) {
 	#testimonial {
-		max-height: 352px;
+		height: 379px;
 	}
 }
 
