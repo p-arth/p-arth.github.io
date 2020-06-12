@@ -21,6 +21,7 @@ const openRandoImageX = document.querySelector("#rando-more")
 openRandoImage.addEventListener('click', showDetailsRandomeal);
 openRandoImageX.addEventListener('click', showDetailsRandomeal);
 
+
 const showDetailsRioserve = () => {
   const img = document.querySelector("#rioserve-img");
   img.classList.toggle("open");
@@ -32,6 +33,20 @@ const openRioImage = document.querySelector("#rioserve-img")
 const openRioImageX = document.querySelector("#rio-more")
 openRioImage.addEventListener('click', showDetailsRioserve);
 openRioImageX.addEventListener('click', showDetailsRioserve);
+
+
+const showDetailsCocktail = () => {
+  const img = document.querySelector("#cocktail-img");
+  img.classList.toggle("open");
+  const details = document.querySelector("#cocktail-details");
+  details.classList.toggle("active");
+}
+
+const openCocktailImage = document.querySelector("#cocktail-img")
+const openCocktailImageX = document.querySelector("#cocktail-more")
+openCocktailImage.addEventListener('click', showDetailsCocktail);
+openCocktailImageX.addEventListener('click', showDetailsCocktail);
+
 
 const showMusic = () => {
   const music = document.querySelector(".music");
