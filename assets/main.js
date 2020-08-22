@@ -47,6 +47,18 @@ const openCocktailImageX = document.querySelector("#cocktail-more")
 openCocktailImage.addEventListener('click', showDetailsCocktail);
 openCocktailImageX.addEventListener('click', showDetailsCocktail);
 
+const showDetailsMicro = () => {
+  const img = document.querySelector("#micro-img");
+  img.classList.toggle("open");
+  const details = document.querySelector("#micro-details");
+  details.classList.toggle("active");
+}
+
+const openMicroImage = document.querySelector("#micro-img")
+const openMicroImageX = document.querySelector("#micro-more")
+openMicroImage.addEventListener('click', showDetailsMicro);
+openMicroImageX.addEventListener('click', showDetailsMicro);
+
 
 const showMusic = () => {
   const music = document.querySelector(".music");
