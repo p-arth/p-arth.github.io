@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;700&display=swap");
 
 /* Base */
 html {
@@ -9,8 +9,12 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #222;
+}
+
+.about-me {
+  font-size: 0.8em;
 }
 
 /* Grid */
@@ -166,7 +170,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -254,16 +258,20 @@ header {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
 header::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 120%;
   height: 110%;
-  background-image: linear-gradient(125deg, rgba(112, 83, 198, 0.6) 0%, rgba(211, 65, 68, 0.6) 100%),
-    url('./images/hackerman1.jpg');
+  background-image: linear-gradient(
+      125deg,
+      rgba(112, 83, 198, 0.6) 0%,
+      rgba(211, 65, 68, 0.6) 100%
+    ),
+    url("./images/hackerman1.jpg");
   background-clip: content-box;
   background-size: cover;
   background-position: bottom;
@@ -526,8 +534,12 @@ nav ul a:hover {
 .highlight {
   text-decoration: none;
   font-weight: bolder;
-  color: linear-gradient(125deg, rgba(112, 83, 198, 0.6) 0%, rgba(211, 65, 68, 0.6) 100%),
-    url('./images/hackerman1.jpg');
+  color: linear-gradient(
+      125deg,
+      rgba(112, 83, 198, 0.6) 0%,
+      rgba(211, 65, 68, 0.6) 100%
+    ),
+    url("./images/hackerman1.jpg");
   /* color: white; */
 }
 
@@ -616,7 +628,7 @@ nav ul a:hover {
   border: solid 1px rgb(31, 124, 49);
 }
 
-.tippy-box[data-theme~='p-gradient'] {
+.tippy-box[data-theme~="p-gradient"] {
   background: linear-gradient(135deg, #7055c6 0%, #d34144 100%);
   color: white;
   /* font-weight: bolder; */
@@ -684,6 +696,7 @@ nav ul a:hover {
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0 100px 0;
+  background-color: #f5f5f5;
 }
 
 .work {
@@ -768,7 +781,6 @@ nav ul a:hover {
 
 #career {
   padding: 100px 0 100px 0;
-  background-color: #f5f5f5;
 }
 
 /* Testimonial */
@@ -1011,7 +1023,7 @@ form {
 .container:after,
 .row:after,
 .u-cf {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
