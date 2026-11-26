@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Pedro A. Veloso · Senior Full Stack Engineer</title>
     <meta charset="utf-8" />
@@ -83,9 +83,14 @@
 
     <div class="main_nav">
       <div class="container">
-        <div class="mobile-toggle">
+        <button
+          type="button"
+          class="mobile-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
           <span></span> <span></span> <span></span>
-        </div>
+        </button>
         <nav>
           <ul>
             <li><a class="smoothscroll" href="#header">Home</a></li>
@@ -103,7 +108,7 @@
 
     <header id="header">
       <div class="title">
-        <img src="./assets/images/ness1.gif" class="icon heading" />
+        <img src="./assets/images/ness1.gif" class="icon heading" alt="" />
         <div class="smallsep heading"></div>
         <h1 class="main-heading">
           <div id="typed-strings">
@@ -117,19 +122,19 @@
         <div class="hero-btns heading">
           <a
             href="./assets/documents/pedro-a-veloso-cv.pdf"
-            target="_blank"
+            target="_blank" rel="noopener"
             class="hero-btn hero-btn-primary"
             >View résumé</a
           >
           <a href="#contact" class="smoothscroll hero-btn">Get in touch</a>
         </div>
-        <a class="smoothscroll" href="#about">
+        <a class="smoothscroll" href="#about" aria-label="Scroll to About">
           <div class="mouse">
             <div class="wheel"></div>
           </div>
         </a>
       </div>
-      <a class="smoothscroll" href="#about">
+      <a class="smoothscroll" href="#about" aria-label="Scroll to About">
         <div class="scroll-down"></div>
       </a>
     </header>
@@ -152,17 +157,19 @@
             <div style="text-align: center">
               <a
                 href="https://github.com/p-arth"
-                target="_blank"
+                target="_blank" rel="noopener"
+                aria-label="Pedro on GitHub"
                 class="typcn typcn-social-github-circular socialIconsAbout"
               ></a>
               <a
                 href="https://www.linkedin.com/in/pedrotheart/"
-                target="_blank"
+                target="_blank" rel="noopener"
+                aria-label="Pedro on LinkedIn"
                 class="typcn typcn-social-linkedin-circular socialIconsAbout"
               ></a>
               <a
                 href="https://open.spotify.com/user/12161828353?si=_FmYyMSJQUyHc3v8wXMCtA"
-                target="_blank"
+                target="_blank" rel="noopener"
                 class="socialIconsXAbout"
                 aria-label="Pedro on Spotify"
                 ><svg class="spotify-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6.6 9.4c3.7-1.1 7.6-.8 10.9 1M7.2 12.6c3-.8 6.1-.5 8.8.9M7.8 15.6c2.4-.6 4.7-.4 6.7.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a
@@ -196,7 +203,7 @@
                 <a
                   class="highlight"
                   href="https://www.lewagon.com/rio"
-                  target="_blank"
+                  target="_blank" rel="noopener"
                   >Le Wagon</a
                 >
                 bootcamp. That background still shows: I care about UX and work
@@ -508,7 +515,7 @@
             <h4>
               <a
                 href="https://github.com/p-arth/micro-app-api-idfm-test"
-                target="_blank"
+                target="_blank" rel="noopener"
                 >Micro App API IDFM</a
               >
             </h4>
@@ -516,7 +523,7 @@
               A micro app that runs as a bot, it periodically makes a call to an
               API, get a response, save it in Json format and send it to an
               online storage.
-              <b><a id="micro-more" style="font-size: 25px">+</a></b>
+              <button type="button" id="micro-more" class="more-toggle" aria-expanded="false" aria-controls="micro-details" aria-label="Show Micro App API IDFM details">+</button>
             </p>
             <div class="tags">
               <div class="tag back">Ruby</div>
@@ -530,7 +537,7 @@
             <p class="work-details" id="micro-details" style="line-height: 1.2">
               Micro App API IDFM is a Rails API that runs as a bot, created as a
               freelance job for
-              <a href="http://www.groupe-lacroix.fr/" target="_blank"
+              <a href="http://www.groupe-lacroix.fr/" target="_blank" rel="noopener"
                 >Groupement Lacroix & Savac</a
               >. It's an app developed with <em>Ruby</em> that through the use
               of tasks and CRON jobs make a call to an API every five minutes,
@@ -540,7 +547,7 @@
               <b
                 ><a
                   href="https://github.com/p-arth/micro-app-api-idfm-test"
-                  target="_blank"
+                  target="_blank" rel="noopener"
                   >right here</a
                 ></b
               >.
@@ -559,14 +566,14 @@
             <h4>
               <a
                 href="https://p-arth.github.io/ptu-damage-calculator/"
-                target="_blank"
+                target="_blank" rel="noopener"
                 >PTU Damage Calculator</a
               >
             </h4>
             <p>
               Small web app to increase combat pacing while playing Pokémon
               Tabletop United.
-              <b><a id="ptu-more" style="font-size: 25px">+</a></b>
+              <button type="button" id="ptu-more" class="more-toggle" aria-expanded="false" aria-controls="ptu-details" aria-label="Show PTU Damage Calculator details">+</button>
             </p>
             <div class="tags">
               <div class="tag front">ReactJS</div>
@@ -585,7 +592,7 @@
               <b
                 ><a
                   href="https://p-arth.github.io/ptu-damage-calculator/"
-                  target="_blank"
+                  target="_blank" rel="noopener"
                   >You can check it here</a
                 ></b
               >.
@@ -606,7 +613,7 @@
             </h4>
             <p>
               An app for indecisive eaters.
-              <b><a id="rando-more" style="font-size: 25px">+</a></b>
+              <button type="button" id="rando-more" class="more-toggle" aria-expanded="false" aria-controls="randomeal-details" aria-label="Show Randomeal details">+</button>
             </p>
             <div class="tags">
               <div class="tag fulldev">PWA</div>
@@ -648,7 +655,7 @@
             </h4>
             <p>
               A platform to make and manage restaurant reservations.
-              <b><a id="rio-more" style="font-size: 25px">+</a></b>
+              <button type="button" id="rio-more" class="more-toggle" aria-expanded="false" aria-controls="rioserve-details" aria-label="Show Rioserve details">+</button>
             </p>
             <div class="tags">
               <div class="tag fulldev">Rails</div>
@@ -758,23 +765,23 @@
           chat about code, games or music, my inbox is open. I'm currently open
           to <b>remote roles</b>.<br /><br />
           You should know, I love sharing music, so
-          <a id="show-music">I may have some for you!</a>
+          <button type="button" id="show-music" class="link-button" aria-expanded="false" aria-controls="music-list">I may have some for you!</button>
         </p>
-        <div class="music">
+        <div class="music" id="music-list">
           <div class="playlists">
             <a
               href="https://open.spotify.com/playlist/02BNcuahZmZHhDfZRnLntQ?si=qpgSdxL6QOufwLXgacqsDQ"
-              target="_blank"
+              target="_blank" rel="noopener"
               ><div class="playlist">I'm feeling retrofuturistic</div></a
             >
             <a
               href="https://open.spotify.com/playlist/1qSvHR4AKXbgTrO1Y1jMrh?si=sdbPzEdgQeGxhKtpyH9bMQ"
-              target="_blank"
+              target="_blank" rel="noopener"
               ><div class="playlist">I'm feeling apocalyptic</div></a
             >
             <a
               href="https://open.spotify.com/playlist/4Kc44OuSqVybCchTb9qLFm?si=l9x2DlJ7SxujkqAFFtNdIw"
-              target="_blank"
+              target="_blank" rel="noopener"
               ><div class="playlist">Well, I just wanna chill</div></a
             >
           </div>
@@ -783,21 +790,23 @@
           <a href="mailto:pedro.art.vel@gmail.com"
             ><div class="btn">Send Email</div></a
           >
-          <a href="./assets/documents/pedro-a-veloso-cv.pdf" target="_blank"
+          <a href="./assets/documents/pedro-a-veloso-cv.pdf" target="_blank" rel="noopener"
             ><div class="btn">View Résumé</div></a
           >
-          <a href="https://www.linkedin.com/in/pedrotheart/" target="_blank"
+          <a href="https://www.linkedin.com/in/pedrotheart/" target="_blank" rel="noopener"
             ><div class="btn">LinkedIn</div></a
           >
         </div>
         <a
           href="https://github.com/p-arth"
-          target="_blank"
+          target="_blank" rel="noopener"
+          aria-label="Pedro on GitHub"
           class="typcn typcn-social-github-circular socialIconsContact"
         ></a>
         <a
           href="https://www.linkedin.com/in/pedrotheart/"
-          target="_blank"
+          target="_blank" rel="noopener"
+          aria-label="Pedro on LinkedIn"
           class="typcn typcn-social-linkedin-circular socialIconsContact"
         ></a>
       </div>
@@ -813,7 +822,7 @@
             <a
               class="neutral-link"
               href="https://github.com/p-arth/p-arth.github.io"
-              target="_blank"
+              target="_blank" rel="noopener"
               >source on GitHub</a
             >
           </p>
@@ -822,21 +831,23 @@
         <div class="three columns">
           <p>
             Follow me
-            <img src="./assets/images/follow.gif" class="little-gif-follow" />
+            <img src="./assets/images/follow.gif" class="little-gif-follow" alt="" />
           </p>
           <a
             href="https://github.com/p-arth"
-            target="_blank"
+            target="_blank" rel="noopener"
+            aria-label="Pedro on GitHub"
             class="typcn typcn-social-github-circular socialIcons"
           ></a>
           <a
             href="https://www.linkedin.com/in/pedrotheart/"
-            target="_blank"
+            target="_blank" rel="noopener"
+            aria-label="Pedro on LinkedIn"
             class="typcn typcn-social-linkedin-circular socialIcons"
           ></a>
           <a
             href="https://open.spotify.com/user/12161828353?si=_FmYyMSJQUyHc3v8wXMCtA"
-            target="_blank"
+            target="_blank" rel="noopener"
             class="socialIconsX"
             aria-label="Pedro on Spotify"
             ><svg class="spotify-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6.6 9.4c3.7-1.1 7.6-.8 10.9 1M7.2 12.6c3-.8 6.1-.5 8.8.9M7.8 15.6c2.4-.6 4.7-.4 6.7.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a

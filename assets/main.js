@@ -52,6 +52,25 @@ if ('IntersectionObserver' in window) {
   xpBlocks.forEach((block) => block.classList.add('in-view'));
 }
 
+/*----------------------------------------------------*/
+/* Accessibility: keep expanded/collapsed state in sync
+------------------------------------------------------ */
+
+// Update aria-expanded whenever the controlled element's class changes
+// (works for clicks on the "+" buttons, the project images and the menu)
+const syncExpanded = (btn, target, openClass) => {
+  if (!btn || !target) return;
+  const update = () =>
+    btn.setAttribute('aria-expanded', String(target.classList.contains(openClass)));
+  new MutationObserver(update).observe(target, { attributes: true, attributeFilter: ['class'] });
+  update();
+};
+document.querySelectorAll('.more-toggle').forEach((btn) => {
+  syncExpanded(btn, document.getElementById(btn.getAttribute('aria-controls')), 'active');
+});
+syncExpanded(document.getElementById('show-music'), document.getElementById('music-list'), 'show');
+syncExpanded(document.querySelector('.mobile-toggle'), document.querySelector('.main_nav'), 'open-nav');
+
 // import { builtinModules } from "module";
 
 // Typed.js

@@ -1417,3 +1417,49 @@ body {
   width: 1.14em;
   height: 1.14em;
 }
+
+/* ---------- 2026 refresh: accessibility ---------- */
+:focus-visible {
+  outline: 3px solid #d34144;
+  outline-offset: 3px;
+}
+.more-toggle,
+.link-button,
+button.mobile-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.more-toggle {
+  color: #7053c6;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0 4px;
+  vertical-align: middle;
+}
+.more-toggle:hover {
+  color: #d34144;
+}
+.link-button {
+  color: #7053c6;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.link-button:hover {
+  color: #d34144;
+}
+button.mobile-toggle {
+  height: 30px;
+}
+[data-theme="night"] .more-toggle,
+[data-theme="night"] .link-button {
+  color: #9d86f0;
+}
+[data-theme="night"] .more-toggle:hover,
+[data-theme="night"] .link-button:hover {
+  color: #ff6b6e;
+}
