@@ -1,3 +1,57 @@
+/*----------------------------------------------------*/
+/* Day / night toggle (always starts in day mode)
+------------------------------------------------------ */
+
+const themeToggle = document.getElementById('theme-toggle');
+const setTheme = (theme) => {
+  const root = document.documentElement;
+  if (theme === 'night') {
+    root.setAttribute('data-theme', 'night');
+  } else {
+    root.removeAttribute('data-theme');
+  }
+  const label =
+    theme === 'night' ? 'Switch to day mode' : 'Switch to night mode';
+  themeToggle.setAttribute('aria-label', label);
+  themeToggle.setAttribute('title', label);
+  try {
+    localStorage.setItem('theme', theme);
+  } catch (e) {}
+};
+setTheme(
+  document.documentElement.getAttribute('data-theme') === 'night'
+    ? 'night'
+    : 'day'
+);
+themeToggle.addEventListener('click', () => {
+  const isNight =
+    document.documentElement.getAttribute('data-theme') === 'night';
+  setTheme(isNight ? 'day' : 'night');
+});
+
+/*----------------------------------------------------*/
+/* Skills: fill the XP bars when they scroll into view
+------------------------------------------------------ */
+
+document.documentElement.classList.add('js');
+const xpBlocks = document.querySelectorAll('.xp');
+if ('IntersectionObserver' in window) {
+  const xpObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          xpObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+  xpBlocks.forEach((block) => xpObserver.observe(block));
+} else {
+  xpBlocks.forEach((block) => block.classList.add('in-view'));
+}
+
 // import { builtinModules } from "module";
 
 // Typed.js
@@ -141,26 +195,3 @@ tippy('[data-tippy-content]', {
   animation: 'scale',
   theme: 'p-gradient'
 });
-
-/*----------------------------------------------------*/
-/* Skills: fill the XP bars when they scroll into view
------------------------------------------------------- */
-
-document.documentElement.classList.add('js');
-const xpBlocks = document.querySelectorAll('.xp');
-if ('IntersectionObserver' in window) {
-  const xpObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-          xpObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.4 }
-  );
-  xpBlocks.forEach((block) => xpObserver.observe(block));
-} else {
-  xpBlocks.forEach((block) => block.classList.add('in-view'));
-}

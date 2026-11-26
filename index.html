@@ -36,6 +36,13 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 
+    <script>
+      // Apply a saved night-mode choice before the page paints (default: day)
+      try {
+        if (localStorage.getItem("theme") === "night")
+          document.documentElement.setAttribute("data-theme", "night");
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
     <link
       rel="stylesheet"
@@ -52,6 +59,26 @@
   </head>
 
   <body>
+    <!-- Day / night toggle -->
+    <button
+      id="theme-toggle"
+      class="theme-toggle"
+      type="button"
+      aria-label="Switch to night mode"
+      title="Switch to night mode"
+    >
+      <svg class="icon-sun" viewBox="0 0 16 16" aria-hidden="true">
+        <path
+          d="M7 0h2v3H7zM7 13h2v3H7zM0 7h3v2H0zM13 7h3v2h-3zM2 2h2v2H2zM12 2h2v2h-2zM2 12h2v2H2zM12 12h2v2h-2zM6 4h4v1h1v1h1v4h-1v1h-1v1H6v-1H5v-1H4V6h1V5h1z"
+        />
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 16 16" aria-hidden="true">
+        <path
+          d="M6 1h4v1H8v1H7v2H6v6h1v2h1v1h2v1h3v1h-1v1H6v-1H4v-1H3v-1H2v-2H1V6h1V4h1V3h1V2h2z"
+        />
+        <path d="M12 3h1v1h-1zM14 6h1v1h-1zM11 7h1v1h-1z" class="stars" />
+      </svg>
+    </button>
     <!-- Navbar -->
 
     <div class="main_nav">

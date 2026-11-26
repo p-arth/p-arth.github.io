@@ -1256,3 +1256,152 @@ form {
     margin: 10px 0;
   }
 }
+
+/* ---------- 2026 refresh: day / night toggle ---------- */
+.theme-toggle {
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  z-index: 1000;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  margin: 0;
+  border: 2px solid #2b2540;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 3px 0 rgba(43, 37, 64, 0.35);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  transition: background-color 0.3s, transform 0.15s;
+}
+.theme-toggle:hover {
+  transform: translateY(-2px);
+}
+.theme-toggle:active {
+  transform: translateY(1px);
+}
+.theme-toggle:focus-visible {
+  outline: 3px solid #d34144;
+  outline-offset: 3px;
+}
+.theme-toggle svg {
+  width: 22px;
+  height: 22px;
+  shape-rendering: crispEdges;
+}
+.theme-toggle .icon-sun {
+  fill: #e8a13a;
+}
+.theme-toggle .icon-moon {
+  display: none;
+  fill: #f3d36b;
+}
+.theme-toggle .icon-moon .stars {
+  fill: #ffffff;
+}
+@media only screen and (max-width: 766px) {
+  .theme-toggle {
+    right: auto;
+    left: 14px;
+  }
+}
+
+/* keep the blurred header photo inside the header's own layer */
+header {
+  isolation: isolate;
+}
+
+/* Night palette */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+[data-theme="night"],
+[data-theme="night"] body {
+  background-color: #15121d;
+  color: #e9e6f2;
+}
+[data-theme="night"] .theme-toggle {
+  background: #2b2540;
+  border-color: #9d86f0;
+}
+[data-theme="night"] .theme-toggle .icon-sun {
+  display: none;
+}
+[data-theme="night"] .theme-toggle .icon-moon {
+  display: block;
+}
+[data-theme="night"] a {
+  color: #9d86f0;
+}
+[data-theme="night"] a:hover {
+  color: #ff6b6e !important;
+}
+[data-theme="night"] .sticky {
+  background-color: #15121d;
+}
+[data-theme="night"] .mobile-toggle span {
+  background: #e9e6f2;
+}
+[data-theme="night"] #skills,
+[data-theme="night"] #portfolio,
+[data-theme="night"] #contact {
+  background-color: #1d1928;
+}
+[data-theme="night"] .music {
+  background-color: #262135;
+}
+[data-theme="night"] .work-when {
+  color: #a9a3bb;
+}
+[data-theme="night"] .icon,
+[data-theme="night"] .xp-label,
+[data-theme="night"] .quote small,
+[data-theme="night"] .socialIconsAbout,
+[data-theme="night"] .socialIconsXAbout,
+[data-theme="night"] .socialIconsContact {
+  color: #9d86f0;
+}
+[data-theme="night"] .xp-bar {
+  border-color: #3d3556;
+}
+[data-theme="night"] .front {
+  color: #bfb0f7;
+  background-color: rgba(157, 134, 240, 0.14);
+  border-color: #9d86f0;
+}
+[data-theme="night"] .back {
+  color: #ff9a9c;
+  background-color: rgba(255, 107, 110, 0.12);
+  border-color: #ff6b6e;
+}
+[data-theme="night"] .fulldev {
+  color: #8fbaf3;
+  background-color: rgba(95, 155, 230, 0.14);
+  border-color: #5f9be6;
+}
+[data-theme="night"] .others {
+  color: #7fd896;
+  background-color: rgba(79, 180, 106, 0.14);
+  border-color: #4fb46a;
+}
+[data-theme="night"] .work .image {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px #3d3556;
+}
+[data-theme="night"] .neutral-link,
+[data-theme="night"] .hero-btn {
+  color: #ffffff;
+}
+[data-theme="night"] .hero-btn-primary {
+  color: #7053c6;
+}
+@media (prefers-reduced-motion: reduce) {
+  body,
+  .theme-toggle {
+    transition: none;
+  }
+}
