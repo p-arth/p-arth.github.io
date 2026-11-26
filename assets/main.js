@@ -141,3 +141,26 @@ tippy('[data-tippy-content]', {
   animation: 'scale',
   theme: 'p-gradient'
 });
+
+/*----------------------------------------------------*/
+/* Skills: fill the XP bars when they scroll into view
+------------------------------------------------------ */
+
+document.documentElement.classList.add('js');
+const xpBlocks = document.querySelectorAll('.xp');
+if ('IntersectionObserver' in window) {
+  const xpObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          xpObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+  xpBlocks.forEach((block) => xpObserver.observe(block));
+} else {
+  xpBlocks.forEach((block) => block.classList.add('in-view'));
+}

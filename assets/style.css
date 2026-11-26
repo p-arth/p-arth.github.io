@@ -1102,3 +1102,75 @@ form {
 .about-me p {
   margin-bottom: 1em;
 }
+
+/* ---------- 2026 refresh: skills as RPG XP bars ---------- */
+.xp {
+  margin-bottom: 2.4em;
+}
+.xp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.xp-title {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.xp-label {
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7053c6;
+  white-space: nowrap;
+}
+.xp-bar {
+  position: relative;
+  height: 18px;
+  padding: 2px;
+  margin-bottom: 14px;
+  background: #2b2540;
+  border: 3px solid #2b2540;
+  box-shadow: 0 3px 0 rgba(43, 37, 64, 0.25);
+  image-rendering: pixelated;
+}
+.xp-bar::after {
+  /* pixel segments */
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0 14px,
+    #2b2540 14px 17px
+  );
+  pointer-events: none;
+}
+.xp-fill {
+  height: 100%;
+  width: var(--xp);
+  background: linear-gradient(90deg, #7053c6 0%, #d34144 100%);
+  transition: width 1.4s steps(24, end);
+}
+.js .xp-fill {
+  width: 0;
+}
+.js .xp.in-view .xp-fill {
+  width: var(--xp);
+}
+@media (prefers-reduced-motion: reduce) {
+  .xp-fill {
+    transition: none;
+  }
+}
+@media (max-width: 550px) {
+  .xp-head {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
