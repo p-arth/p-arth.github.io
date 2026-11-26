@@ -1414,8 +1414,9 @@ body {
 }
 .socialIconsXAbout .spotify-icon,
 .socialIconsX .spotify-icon {
-  width: 1.14em;
-  height: 1.14em;
+  width: 1.04em;
+  height: 1.04em;
+  vertical-align: -0.14em;
 }
 
 /* ---------- 2026 refresh: accessibility ---------- */
