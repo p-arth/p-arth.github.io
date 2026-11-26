@@ -1174,3 +1174,54 @@ form {
     gap: 2px;
   }
 }
+
+/* ---------- 2026 refresh: career ---------- */
+#career .work-info p {
+  line-height: 1.5;
+  margin-bottom: 0.6em;
+}
+.work-when {
+  font-size: 0.75em;
+  color: #666;
+  white-space: nowrap;
+}
+.work-highlights {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  text-align: left;
+}
+.work-highlights li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+.work-highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  background: linear-gradient(135deg, #7053c6, #d34144);
+}
+@media (max-width: 550px) {
+  .work-when {
+    display: block;
+    margin-top: 6px;
+  }
+  #career .tags {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .work-when .dot {
+    display: none;
+  }
+  .work .image {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
