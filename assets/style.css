@@ -1210,6 +1210,7 @@ form {
   .work-when {
     display: block;
     margin-top: 6px;
+    white-space: normal;
   }
   #career .tags {
     justify-content: center;
@@ -1250,7 +1251,7 @@ form {
     height: auto;
   }
   .quoteLoop {
-    min-height: 520px;
+    min-height: 410px;
   }
   .quote {
     margin: 10px 0;
