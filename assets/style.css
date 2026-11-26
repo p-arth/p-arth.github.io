@@ -1405,3 +1405,15 @@ body {
     transition: none;
   }
 }
+
+/* ---------- 2026 refresh: inline Spotify icon (replaces Font Awesome) ---------- */
+.spotify-icon {
+  width: 0.92em;
+  height: 0.92em;
+  vertical-align: -0.12em;
+}
+.socialIconsXAbout .spotify-icon,
+.socialIconsX .spotify-icon {
+  width: 1.14em;
+  height: 1.14em;
+}
