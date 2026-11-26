@@ -1042,3 +1042,63 @@ form {
   background: linear-gradient(135deg, #7055c6 0%, #d34144 100%);
   margin-bottom: 50px;
 }
+
+/* ---------- 2026 refresh: header + about ---------- */
+.title h1 {
+  font-size: clamp(42px, 9vw, 80px);
+}
+.title h2 {
+  margin-top: 40px;
+  font-weight: 700;
+}
+.title .tagline {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 10px auto 0;
+}
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 36px;
+}
+.hero-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  color: #ffffff;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.hero-btn:hover,
+.hero-btn:focus-visible {
+  background-color: #ffffff;
+  color: #7053c6;
+}
+.hero-btn-primary {
+  background-color: #ffffff;
+  color: #7053c6;
+}
+.hero-btn-primary:hover,
+.hero-btn-primary:focus-visible {
+  background-color: #d34144;
+  border-color: #d34144;
+  color: #ffffff;
+}
+.about-me {
+  font-size: 0.95em;
+  line-height: 1.7;
+  text-align: left;
+}
+.about-me p {
+  margin-bottom: 1em;
+}
