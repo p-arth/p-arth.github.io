@@ -1230,3 +1230,29 @@ form {
 #portfolio .work-info > p {
   line-height: 1.5;
 }
+
+/* ---------- 2026 refresh: testimonials ---------- */
+.quoteLoop {
+  min-height: 300px;
+}
+.quote h5 {
+  max-width: 760px;
+  margin: 18px auto 0;
+  line-height: 1.5;
+}
+.quote small {
+  display: block;
+  margin-top: 12px;
+  color: #7053c6;
+}
+@media (max-width: 550px) {
+  #testimonial {
+    height: auto;
+  }
+  .quoteLoop {
+    min-height: 520px;
+  }
+  .quote {
+    margin: 10px 0;
+  }
+}
