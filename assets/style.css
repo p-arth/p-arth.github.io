@@ -1225,3 +1225,8 @@ form {
     margin-right: auto !important;
   }
 }
+
+/* ---------- 2026 refresh: projects ---------- */
+#portfolio .work-info > p {
+  line-height: 1.5;
+}
